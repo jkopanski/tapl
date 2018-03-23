@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: b72826da7a40eaad76485ddac47ff872ef5e45bcda9174b8902290998e52d8c7
+-- hash: fe1d13cfd57c6a39ca0681b298add27ca27ce22ac6b571a920b030059c37a9ce
 
 name:           arith
 version:        0.1.0.0
@@ -31,6 +31,7 @@ library
   default-extensions: BangPatterns OverloadedStrings
   build-depends:
       base >=4.7 && <5
+    , containers
     , parsers
     , text
     , trifecta
@@ -46,6 +47,7 @@ executable arith
   default-extensions: BangPatterns OverloadedStrings
   build-depends:
       base >=4.7 && <5
+    , containers
     , parsers
     , text
     , trifecta
