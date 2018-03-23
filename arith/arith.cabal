@@ -1,0 +1,53 @@
+-- This file has been generated from package.yaml by hpack version 0.21.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: b72826da7a40eaad76485ddac47ff872ef5e45bcda9174b8902290998e52d8c7
+
+name:           arith
+version:        0.1.0.0
+synopsis:       TAPL chapter 3
+category:       Languages
+homepage:       https://github.com/githubuser/tapl/arith
+author:         Jakub Kopański <jkopanski@protonmail.com>
+maintainer:     jkopanski@protonmail.com
+copyright:      2018 Jakub Kopański
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+
+extra-source-files:
+    README.md
+
+library
+  exposed-modules:
+      Parser
+      Syntax
+  other-modules:
+      Paths_arith
+  hs-source-dirs:
+      src
+  default-extensions: BangPatterns OverloadedStrings
+  build-depends:
+      base >=4.7 && <5
+    , parsers
+    , text
+    , trifecta
+    , unordered-containers
+  default-language: Haskell2010
+
+executable arith
+  main-is: Main.hs
+  other-modules:
+      Paths_arith
+  hs-source-dirs:
+      app
+  default-extensions: BangPatterns OverloadedStrings
+  build-depends:
+      base >=4.7 && <5
+    , parsers
+    , text
+    , trifecta
+    , unordered-containers
+  default-language: Haskell2010

@@ -1,0 +1,31 @@
+name:                arith
+version:             0.1.0.0
+synopsis:            TAPL chapter 3
+#description:
+homepage:            https://github.com/githubuser/tapl/arith
+license:             BSD3
+author:              Jakub Kopański <jkopanski@protonmail.com>
+maintainer:          jkopanski@protonmail.com
+copyright:           2018 Jakub Kopański
+category:            Languages
+extra-source-files:
+- README.md
+
+default-extensions:
+- BangPatterns
+- OverloadedStrings
+
+dependencies:
+  - base >= 4.7 && < 5
+  - parsers
+  - text
+  - trifecta
+  - unordered-containers
+
+executables:
+  arith:
+    source-dirs:      app
+    main:             Main.hs
+
+library:
+  source-dirs:        src
